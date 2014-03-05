@@ -2,7 +2,7 @@
 	"author"      : "Bjoern Lange <code@wbl-konzept.de>",
 	"dependencies": {
 		"bcrypt-nodejs": "0.0.3",
-		"crypt": "0.0.3",
+		"crypto": "0.0.3",
 		"express": "4.0.0-rc2",
 		"nano": "5.7.1"
 	},
