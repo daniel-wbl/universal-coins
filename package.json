@@ -9,5 +9,9 @@
 	"engine"      : "node >= 0.10.24",
 	"description" : "Universal Coins Web App",
 	"name"        : "universal-coins",
+	"repository": {
+		"type": "git",
+		"url" : "https://github.com/WBL-BjoernLange/universal-coins.git"
+	},
 	"version"     : "0.0.1"
 }
