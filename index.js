@@ -23,14 +23,10 @@ oApp.get(
 				oResponse.writeHead(404, {'Content-Length': Buffer.byteLength(sBody), 'Content-Type': 'text/plain'});
 				oResponse.end(sBody);
 			} else {
-				var sBody = oBody.coins + '';
-
-				oResponse.writeHead(200, {'Content-Length': Buffer.byteLength(sBody), 'Content-Type': 'text/plain'});
-				oResponse.end(sBody);
+				oResponse.render('user', {oUser: oBody});
 			} // else
 		});
 	}
-
 )
 
 oApp.listen(Number(process.argv[2]));
