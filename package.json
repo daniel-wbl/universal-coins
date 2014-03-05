@@ -1,0 +1,13 @@
+{
+	"author"      : "Bjoern Lange <code@wbl-konzept.de>",
+	"dependencies": {
+		"bcrypt-nodejs": "0.0.3",
+		"crypt": "0.0.3",
+		"express": "4.0.0-rc2",
+		"nano": "5.7.1"
+	},
+	"engine"      : "node >= 0.10.24",
+	"description" : "Universal Coins Web App",
+	"name"        : "universal-coins",
+	"version"     : "0.0.1"
+}
