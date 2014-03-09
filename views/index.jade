@@ -1,1 +1,23 @@
-h1 Hello World
+doctype html
+html(lang="en").no-js
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0")
+    title Universal Coins - One coin to give them all.
+    link(rel="stylesheet", href="css/foundation.css")
+    script(type='text/javascript', src='js/vendor/modernizr.js')
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js')
+    body
+        .row
+            .large-6.columns
+                h1 Universal Coins
+            .large-6.columns
+                form(action="/signin",data-abide=true,type="post")
+                    label Mail
+                    input(required=true,type="email")
+                    label Password
+                    input(required=true,type="password")
+                    button.small Login
+
+    script(type='text/javascript', src='/js/foundation.min.js')
+    script(type='text/javascript').
+        $(document).foundation();
