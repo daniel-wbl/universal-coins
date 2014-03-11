@@ -2,16 +2,16 @@ extends layout
 
 block content
     .row
-        .large-12.columns
-            h2 Kontoumsätze
+        .medium-12.columns
+            h2.section-head Kontoumsätze
 
     .row
-        .large-12.columns
+        .medium-12.columns.current-balance
             span Aktueller Kontostand
                 strong &nbsp; +356.654.654
 
     .row
-        .large-4.columns
+        .medium-4.columns
             .panel.overview
                 dl
                     dt.month
@@ -26,7 +26,7 @@ block content
                     dd 204.532
                         span.negativ -215
 
-        .large-4.columns
+        .medium-4.columns
             .panel.overview
                 dl
                     dt.month Monat
@@ -40,7 +40,7 @@ block content
                     dt Kontostand Ende des Monats
                     dd 204.532
                         span.positiv +215
-        .large-4.columns
+        .medium-4.columns
             .panel.overview
                 dl
                     dt.month
@@ -56,15 +56,15 @@ block content
                         span.negativ -215
 
     .row
-        .large-12.columns
+        .medium-12.columns
             button.button.right Details
 
     .row
-        .large-12.columns
-            h2 Likes
+        .medium-12.columns
+            h2.section-head Likes
 
     .row
-        .large-12.columns
+        .medium-12.columns
             ul.imageflow
                 li
                     img(src="http://placekitten.com/200/200",title=Profilbild)
@@ -72,12 +72,12 @@ block content
                     img(src="http://placekitten.com/200/200",title=Profilbild)
 
     .row
-        .large-12.columns
+        .medium-12.columns
             button.button.right Alles anzeigen
 
     .row
         .large-12.columns
-            h2 Kurs
+            h2.section-head Kurs
             h3 Der C-Dax
             p
                 | Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust anklagt
@@ -89,13 +89,13 @@ block content
             img(src="http://placekitten.com/1200/600",title=Profilbild)
 
     .row
-        .large-12.columns
+        .medium-12.columns
             button.button.right Alles anzeigen
 
     .row
-        .large-4.columns
+        .medium-4.columns
             img(src="http://placekitten.com/300/300")
-        .large-8.columns
+        .medium-8.columns
             h2 Über Universal Coins
             p.
                 Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust
@@ -115,11 +115,11 @@ block content
 
 
     .row
-        .large-6.columns
+        .medium-6.columns
             .row
-                .large-5.columns
+                .medium-5.columns
                     img(src="http://placekitten.com/200/200",title="Profilbild")
-                .large-7.columns
+                .medium-7.columns
                     h4 Max Mustermann
                     p
                         a(href="mailto:mmuster@gmail.com") mmuster@gmail.com
@@ -129,21 +129,21 @@ block content
                     a.positiv(href="#") Thumbs up
                     a.negativ(href="#") Thumbs down
 
-        .large-6.columns
+        .medium-6.columns
             strong.rating Rating
                 span.amount &nbsp; 356.256
 
     .row
-        .large-12.columns
+        .medium-12.columns
             h3 Gute Taten von Max Musterman
     .row
-        .large-12.columns
+        .medium-12.columns
             img(src="http://placekitten.com/1200/600")
 
     .row
-        .large-6.columns
+        .medium-6.columns
             img(src="http://placekitten.com/400/300")
-        .large-6.columns.employerRating
+        .medium-6.columns.employerRating
             form
                 p Arbeitgeber von Maxmustermann bewerten
                     br

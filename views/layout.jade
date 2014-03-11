@@ -4,32 +4,35 @@ html(lang="en").no-js
     meta(name="viewport",content="width=device-width, initial-scale=1.0")
     title Universal Coins - One coin to give them all.
     link(rel="stylesheet", href="css/foundation.css")
+    link(rel="stylesheet", href="css/app.css")
+    link(href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic",rel='stylesheet',type='text/css')
     script(type='text/javascript', src='js/vendor/modernizr.js')
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js')
+
     body
 
         header.row
-            .large-2.columns
-                img(src="http://placekitten.com/100/100",title="Profilbild")
-            .large-10.columns
+            .medium-2.columns
+                img.logo(src="img/logo.png")
+            .medium-10.columns
                 .row
-                    .large-5.columns
+                    .medium-5.columns
                         span.kontostand Kontostand
                             span &nbsp; 356256
 
-                    .large-7.columns
+                    .medium-7.columns
                         a(href="#") ausloggen
                         img(src="http://placekitten.com/30/30",title="Profilbild")
                         span Max Mustermann
 
         .row
-            .large-12.columns
+            .medium-12.columns
 
                 nav.top-bar(data-topbar='data-topbar')
-                    ul.title-area
+                    ul.title-area.show-for-small
                         li.name
                             h1
-                                a(href='#') My Site
+                                a(href='#') Navigation
                         li.toggle-topbar.menu-icon
                             a(href='#') Menu
                         section.top-bar-section
@@ -52,9 +55,9 @@ html(lang="en").no-js
         //Loginbereich
 
         //.row
-            .large-6.columns
+            .medium-6.columns
                 h1.logo Universal Coins
-            .large-6.columns
+            .medium-6.columns
                 form(action="/signin",data-abide=true,type="post")
                     label Mail
                     input(required=true,type="email")
@@ -64,17 +67,20 @@ html(lang="en").no-js
 
 
         .row
-            .large-12.columns
-                h1.pageheader
-                    strong Gute Taten bleiben nicht länger unbelohnt mit
-                        span UNIVERSAL COINS
+            .medium-12.columns
+                h1.page-head
+                    strong Gute Taten
+                    | &nbsp; bleiben nicht länger unbelohnt
+                    br
+                    | mit
+                    span &nbsp; UNIVERSAL COINS
 
         block content
 
         .row
-            .large-4.columns
+            .medium-4.columns
                 img(src="http://placekitten.com/300/300")
-            .large-8.columns
+            .medium-8.columns
                 h2 Über Universal Coins
                 p.
                     Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust
@@ -87,7 +93,7 @@ html(lang="en").no-js
 
 
         footer.row
-            .large-12.columns
+            .medium-12.columns
                 img(src="http://placekitten.com/1200/300")
 
     script(type='text/javascript', src='/js/foundation.min.js')

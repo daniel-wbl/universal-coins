@@ -38,3 +38,76 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.page-head {
+	background: url("../img/headline-bg.jpg") repeat;
+	color: $white;
+	font-size: 23px;
+	font-weight: 300;
+	height: 125px;
+	line-height: 30px;
+	padding: 33px 0 0 30px;
+	margin-bottom: 20px;
+
+	strong {
+		font-weight: 700;
+	}
+
+	span {
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 20px;
+	}
+}
+
+.section-head {
+	border-bottom: 1px solid $black;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+@mixin button {
+	background: none;
+	border: 2px solid $secondary-color;
+	color: $secondary-color;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+
+	&:hover {
+		background: $secondary-color;
+		color: $white;
+	}
+}
+
+.button, button{
+	@include button;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	text-transform: uppercase;
+}
+
+.title-area {
+	display: none;
+}
+
+img.logo {
+	margin-bottom: 20px;
+}
+
+.current-balance {
+	font-weight: bold;
+	font-size: 15px;
+}
