@@ -7,26 +7,14 @@ oApp.use(oExpress.static(__dirname + path.sep + 'public'));
 oApp.set('views', __dirname + path.sep + 'views');
 oApp.set('view engine', 'jade');
 oApp.engine('jade', require('jade').__express);
+oApp.use(oExpress.cookieParser('S3CRE7'));
+oApp.use(oExpress.cookieSession());
+oApp.use(oExpress.bodyParser());
+oApp.use(oApp.router);
 
-oApp.get('/', function (oRequest, oResponse) {
-	oResponse.render('index');
-});
-
-oApp.get(
-	'/user/:id',
-	function(oRequest, oResponse) {
-		var oCoins = nano.use('universal_coins');
-
-		oCoins.get(oRequest.params.id, function (bError, oBody) {
-			if (bError) {
-				var sBody = "Not found";
-				oResponse.writeHead(404, {'Content-Length': Buffer.byteLength(sBody), 'Content-Type': 'text/plain'});
-				oResponse.end(sBody);
-			} else {
-				oResponse.render('user', {oUser: oBody});
-			} // else
-		});
-	}
-)
+require('./UC/routes')(oApp);
 
 oApp.listen(Number(process.argv[2]));
+
+// http://runnable.com/UTlPPF-f2W1TAAEe/render-jade-with-express-for-node-js
+// http://jacobmumm.com/2012/09/11/single-page-apps-with-node-and-angular/
