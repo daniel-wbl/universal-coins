@@ -8,6 +8,10 @@ module.exports = {
 		oNext();
 	}, // function
 
+    'startPage_off': function (oRequest, oResponse) {
+        oResponse.render('index_off');
+    }, // function
+
 	'showLoginForm': function(oRequest, oResponse) {
 
 	}, // function

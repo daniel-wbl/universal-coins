@@ -2,6 +2,7 @@ var oFrontCtrlrs = require('./../controllers/frontend.js');
 
 module.exports = function(oApp) {
 	oApp.get('/', oFrontCtrlrs.startPage);
+    oApp.get('/index_off', oFrontCtrlrs.startPage_off);
 	oApp.get('/balance', oFrontCtrlrs.balancePage);
 	oApp.post('/sign_in', oFrontCtrlrs.signIn);
 	oApp.get('/sign_in', oFrontCtrlrs.showLoginForm);

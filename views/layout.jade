@@ -12,18 +12,20 @@ html(lang="en").no-js
     body
 
         header.row
-            .medium-2.columns
+            .medium-2.columns.small-text-center
                 img.logo(src="img/logo.png")
             .medium-10.columns
                 .row
-                    .medium-5.columns
+                    .medium-5.columns.medium-text-right.small-only-text-center
                         span.kontostand Kontostand
                             span &nbsp; 356256
 
-                    .medium-7.columns
-                        a(href="#") ausloggen
-                        img(src="http://placekitten.com/30/30",title="Profilbild")
-                        span Max Mustermann
+                    .medium-7.columns.profil
+                        .right
+                            a.logout(href="#") ausloggen
+                            img(src="http://placekitten.com/30/30",title="Profilbild")
+                            strong
+                                a(href="#") Max Mustermann
 
         .row
             .medium-12.columns
@@ -66,7 +68,7 @@ html(lang="en").no-js
                     button.small Login
 
 
-        .row
+        .row.hide-for-small
             .medium-12.columns
                 h1.page-head
                     strong Gute Taten
@@ -74,12 +76,17 @@ html(lang="en").no-js
                     br
                     | mit
                     span &nbsp; UNIVERSAL COINS
+                    img.teaserpicture(src="img/headline-bg-index.png")
 
         block content
 
         .row
+            .medium-12.columns
+                hr
+
+        .row
             .medium-4.columns
-                img(src="http://placekitten.com/300/300")
+                img.margin-bottom(src="img/uc-logo.jpg")
             .medium-8.columns
                 h2 Über Universal Coins
                 p.
@@ -92,9 +99,11 @@ html(lang="en").no-js
                     grosse Schmerzen ihr folgen, wenn man nicht mit Vernunft ihr nachzugehen verstehe.
 
 
-        footer.row
-            .medium-12.columns
-                img(src="http://placekitten.com/1200/300")
+
+
+        footer.row.margin-top
+            .large-12.columns
+                img.margin-bottom(src="img/footer.jpg")
 
     script(type='text/javascript', src='/js/foundation.min.js')
     script(type='text/javascript').

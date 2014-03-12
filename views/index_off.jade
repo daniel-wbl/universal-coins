@@ -1,0 +1,47 @@
+extends layout
+
+block content
+
+
+    .row
+        .medium-6.columns
+            .row
+                .medium-5.columns
+                    img(src="http://placekitten.com/200/200",title="Profilbild")
+                .medium-7.columns
+                    h4 Max Mustermann
+                    p
+                        a(href="mailto:mmuster@gmail.com") mmuster@gmail.com
+                    p arbeitet bei:
+                        br
+                        strong WBL-Konzept GmbH
+                    a.positiv(href="#") Thumbs up
+                    a.negativ(href="#") Thumbs down
+
+        .medium-6.columns.likecontainer.text-center
+            strong.rating Rating
+                span.amount &nbsp; 356.256
+
+            button.thumbs.neutral
+                span
+                |liken
+
+
+    .row
+        .medium-12.columns
+            h3 Gute Taten von Max Musterman
+    .row
+        .medium-12.columns
+            img(src="http://placekitten.com/1200/600")
+
+    .row
+        .medium-6.columns
+            img(src="http://placekitten.com/400/300")
+        .medium-6.columns.employerRating
+            form
+                p Arbeitgeber von Maxmustermann bewerten
+                    br
+                    strong WBL-Konzept GmbH
+                button.rate.positiv Positiv Bewerten
+                button.rate.negativ Negativ Bewerten
+

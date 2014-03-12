@@ -40,13 +40,92 @@
 //   "foundation/components/visibility";
 
 body {
-	font-size: 14px;
+	font-size: $default-font-size;
 	padding-top: 20px;
+	line-height: 20px;
+}
+
+a {
+	color: $secondary-color;
+}
+
+p {
+	font-size: $default-font-size;
+	line-height: 20px;
+}
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+
+
+
+.positiv-color {
+	color: $positiv;
+}
+
+.positiv-bg {
+	background: $positiv;
+}
+
+.negativ-color {
+	color: $negativ;
+}
+
+.negativ-bg {
+	background: $negativ;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 	margin-top: 0;
+}
+
+header {
+
+	.kontostand {
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 14px;
+		display: inline-block;
+		@media only screen and (max-width: 40em) {
+			display: block;
+			border: 1px solid $black;
+			margin-top: 0;
+			padding: 9px 0;
+		}
+
+		span {
+			color: $secondary-color;
+		}
+	}
+
+	.profil {
+		margin-top: 10px;
+
+		.logout {
+			background: url("../img/logout.jpg") left 5px no-repeat;
+			display: inline-block;
+			padding-left: 17px;
+			margin-right: 20px;
+		}
+
+		img {
+			margin-right: 10px;
+		}
+
+		a {
+			color: $black;
+			
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
 }
 
 .page-head {
@@ -69,12 +148,27 @@ h1,h2,h3,h4,h5,h6 {
 		letter-spacing: 3px;
 		font-size: 20px;
 	}
+
+	img {
+		position: absolute;
+		right: 0;
+		top: 24px;
+		right: 40px;
+		@media only screen and (max-width: 730px) {
+			display: none;
+		}
+	}
 }
 
 .section-head {
 	border-bottom: 1px solid $black;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
+	@media only screen and (max-width: 40em) {
+		border-bottom: 1px solid black;
+		padding-bottom: 8px;
+		margin-bottom: 10px;
+	}
 }
 
 @mixin button {
@@ -91,12 +185,82 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
+.panel.overview {
+
+	dl {
+
+		dt,dd {
+			line-height: 14px;
+			font-size: $default-font-size;
+			font-weight: normal;
+		}
+
+		dt {
+
+
+			&.month {
+				display: none;
+
+				+dd {
+					font-size: 20px;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+			}
+
+		}
+		dd {
+			font-weight: bold;
+
+			&.final-balance {
+				font-size: 20px;
+
+				.negativ-color, .positiv-color {
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+
 .button, button{
 	@include button;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
-	text-transform: uppercase;
+@media only screen and (max-width: 40em) {
+
+	nav.top-bar {
+		margin: 20px 0;
+	}
+
+}
+
+.likecontainer {
+
+	strong.rating {
+		font-size: 25px;
+		display: block;
+		margin-bottom: 20px;
+
+		span.amount {
+			font-size: 35px;
+			color: $primary-color;
+		}
+	}
+}
+
+
+
+.top-bar-section {
+
+	ul {
+		background: $secondary-color;
+	}
+
+	li:not(.has-form) a:not(.button) {
+		text-transform: uppercase;
+	}
+
 }
 
 .title-area {
@@ -110,4 +274,21 @@ img.logo {
 .current-balance {
 	font-weight: bold;
 	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 25px;
+
+	strong {
+		font-size: 20px;
+	}
 }
+
+.imageflow.medium-block-grid-12 {
+
+	margin-bottom: 20px;
+
+	> li {
+		padding: 0;
+	}
+}
+
+
