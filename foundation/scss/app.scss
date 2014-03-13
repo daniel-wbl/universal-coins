@@ -178,12 +178,17 @@ header {
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
+	padding: 15px 30px;
+	line-height: 18px;
+	min-width: 200px;
 
 	&:hover {
 		background: $secondary-color;
 		color: $white;
 	}
 }
+
+
 
 .panel.overview {
 
@@ -235,18 +240,169 @@ header {
 
 }
 
+
+// THUMBS BUTTONS!
+
+.thumbs {
+	padding: 0;
+	line-height: 50px;
+
+	span {
+		background: url("../img/thumbs.png") left 0px no-repeat;
+		display: inline-block;
+		width: 20px;
+		height: 21px;
+		margin-right: 6px;
+		top: 4px;
+		position: relative;
+	}
+
+	&:hover {
+
+		span {
+			background: url("../img/thumbs.png") left -93px no-repeat;
+		}
+	}
+
+	&.up {
+		border-color: $positiv;
+		color: $positiv;
+
+		span {
+			background: url("../img/thumbs.png") left -30px no-repeat;
+		}
+
+
+		&:hover {
+			background: $positiv;
+			color: $white;
+
+			span {
+				background: url("../img/thumbs.png") left -93px no-repeat;
+			}
+		}
+	}
+
+	&.no-text {
+
+		span {
+			margin-right: 0;
+		}
+	}
+
+	&.down {
+		border-color: $negativ;
+		color: $negativ;
+
+		span {
+			background: url("../img/thumbs.png") left -63px no-repeat;
+			top: 7px;
+		}
+
+
+		&:hover {
+			background: $negativ;
+			color: $white;
+
+			span {
+				background: url("../img/thumbs.png") left -127px no-repeat;
+			}
+		}
+	}
+}
+
+.user-overview {
+	h4 {
+		margin-bottom: 0;
+		font-size: 20px;
+	}
+
+	img {
+		margin-bottom: 20px;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	.positiv, .negativ {
+		font-size: 12px;
+		font-weight: bold;
+		color: $black;
+		margin-right: 10px;
+
+		i {
+			text-indent: -99999px;
+			width: 15px;
+			height: 16px;
+			display: inline-block;
+			background: url("../img/thumbs-small.png")
+		}
+	}
+
+	.positiv {
+
+		i {
+			background-position: left 0;
+		}
+	}
+
+	.negativ {
+
+		i {
+			background-position: left -16px;
+			position: relative;
+			top: 3px;
+		}
+	}
+}
+
+.employerRating {
+	p {
+		font-weight: bold;
+		margin-top: 70px;
+		@media only screen and (max-width: 40em) {
+			margin-top: 0;
+		}
+
+		strong {
+			font-size: 30px;
+			margin-top: 9px;
+			display: block;
+
+			@media only screen and (max-width: 40em) {
+				font-size: 20px;
+			}
+		}
+	}
+
+	button {
+		min-width: 46%;
+		margin-bottom: 6px;
+	}
+
+	.amout-of-ratings {
+		width: 46%;
+		font-weight: bold;
+		font-size: 12px;
+	}
+}
+
 .likecontainer {
 
 	strong.rating {
 		font-size: 25px;
 		display: block;
 		margin-bottom: 20px;
+		margin-top: 30px;
 
 		span.amount {
 			font-size: 35px;
 			color: $primary-color;
 		}
 	}
+
+
 }
 
 

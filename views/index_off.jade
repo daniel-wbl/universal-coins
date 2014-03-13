@@ -4,7 +4,7 @@ block content
 
 
     .row
-        .medium-6.columns
+        .medium-6.columns.user-overview
             .row
                 .medium-5.columns
                     img(src="http://placekitten.com/200/200",title="Profilbild")
@@ -15,16 +15,24 @@ block content
                     p arbeitet bei:
                         br
                         strong WBL-Konzept GmbH
-                    a.positiv(href="#") Thumbs up
-                    a.negativ(href="#") Thumbs down
+                    a.positiv(href="#")
+                        i Thumbs up
+                        span &nbsp; (12442)
+                    a.negativ(href="#")
+                        i Thumbs down
+                        span &nbsp; (12442)
 
-        .medium-6.columns.likecontainer.text-center
+        .medium-6.columns.likecontainer.medium-text-center
             strong.rating Rating
                 span.amount &nbsp; 356.256
 
-            button.thumbs.neutral
+            button.thumbs
                 span
                 |liken
+
+    .row
+        .medium-12.columns
+            hr
 
 
     .row
@@ -32,16 +40,26 @@ block content
             h3 Gute Taten von Max Musterman
     .row
         .medium-12.columns
-            img(src="http://placekitten.com/1200/600")
+            canvas#myChart(width="400",height="400", data-type="line")
+
+    .row
+        .medium-12.columns
+            hr
 
     .row
         .medium-6.columns
-            img(src="http://placekitten.com/400/300")
-        .medium-6.columns.employerRating
+            img.hide-for-small(src="http://placekitten.com/400/300")
+        .medium-6.columns.employerRating.text-center
             form
                 p Arbeitgeber von Maxmustermann bewerten
                     br
                     strong WBL-Konzept GmbH
-                button.rate.positiv Positiv Bewerten
-                button.rate.negativ Negativ Bewerten
+                button.rate.thumbs.up.no-text.left
+                    span
+                button.rate.thumbs.down.no-text.right
+                    span
+                div.left.amout-of-ratings
+                    |156.345
+                div.right.amout-of-ratings
+                    | 6.246
 
