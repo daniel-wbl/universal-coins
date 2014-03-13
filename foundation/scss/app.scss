@@ -401,8 +401,32 @@ header {
 			color: $primary-color;
 		}
 	}
+}
 
+.balance-list {
 
+	li {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+	}
+
+	.row.row {
+		margin-right: -5px;
+		margin-left: -5px;
+	}
+
+	.column, .columns {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.panel {
+		padding: 7px 11px;
+		border: none;
+		height: 48px;
+		overflow: hidden;
+		line-height: 34px;
+		margin: 0;
+	}
 }
 
 

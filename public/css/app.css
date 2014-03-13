@@ -9753,42 +9753,67 @@ header .profil a:hover {
   color: #376039;
 }
 
-/* line 412, ../../foundation/scss/app.scss */
+/* line 408, ../../foundation/scss/app.scss */
+.balance-list li {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+/* line 413, ../../foundation/scss/app.scss */
+.balance-list .row.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+/* line 418, ../../foundation/scss/app.scss */
+.balance-list .column, .balance-list .columns {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 422, ../../foundation/scss/app.scss */
+.balance-list .panel {
+  padding: 7px 11px;
+  border: none;
+  height: 48px;
+  overflow: hidden;
+  line-height: 34px;
+  margin: 0;
+}
+
+/* line 436, ../../foundation/scss/app.scss */
 .top-bar-section ul {
   background: #e59e21;
 }
-/* line 416, ../../foundation/scss/app.scss */
+/* line 440, ../../foundation/scss/app.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   text-transform: uppercase;
 }
 
-/* line 422, ../../foundation/scss/app.scss */
+/* line 446, ../../foundation/scss/app.scss */
 .title-area {
   display: none;
 }
 
-/* line 426, ../../foundation/scss/app.scss */
+/* line 450, ../../foundation/scss/app.scss */
 img.logo {
   margin-bottom: 20px;
 }
 
-/* line 430, ../../foundation/scss/app.scss */
+/* line 454, ../../foundation/scss/app.scss */
 .current-balance {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 25px;
 }
-/* line 436, ../../foundation/scss/app.scss */
+/* line 460, ../../foundation/scss/app.scss */
 .current-balance strong {
   font-size: 20px;
 }
 
-/* line 441, ../../foundation/scss/app.scss */
+/* line 465, ../../foundation/scss/app.scss */
 .imageflow.medium-block-grid-12 {
   margin-bottom: 20px;
 }
-/* line 445, ../../foundation/scss/app.scss */
+/* line 469, ../../foundation/scss/app.scss */
 .imageflow.medium-block-grid-12 > li {
   padding: 0;
 }
