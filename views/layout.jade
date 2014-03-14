@@ -12,11 +12,39 @@ html(lang="en").no-js
 
     body
 
+        #fb-root
+
+        script.
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+
+
         header.row
             .medium-2.columns.small-text-center
                 img.logo(src="img/logo.png")
             .medium-10.columns
-                .row
+
+                //Loginbereich
+
+                //.fb-login-button(data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false")
+
+
+
+                form.loginheader(action="/signin",data-abide=true,type="post")
+                    label Mail
+                    input(required=true,type="email")
+                    label Password
+                    input(required=true,type="password")
+                    button.small Login
+
+
+                //.row
                     .medium-5.columns.medium-text-right.small-only-text-center
                         span.kontostand Kontostand
                             span &nbsp; 356256
@@ -54,19 +82,6 @@ html(lang="en").no-js
                                     a(href='#') Kurse
                                 li
                                     a(href='#') Neuigkeiten
-
-        //Loginbereich
-
-        //.row
-            .medium-6.columns
-                h1.logo Universal Coins
-            .medium-6.columns
-                form(action="/signin",data-abide=true,type="post")
-                    label Mail
-                    input(required=true,type="email")
-                    label Password
-                    input(required=true,type="password")
-                    button.small Login
 
 
         .row.hide-for-small
