@@ -8,6 +8,22 @@ module.exports = {
 		oNext();
 	}, // function
 
+    'likePage': function (oRequest, oResponse) {
+        oResponse.render('likes');
+    }, //
+
+    'newsPage': function (oRequest, oResponse) {
+        oResponse.render('news');
+    }, //
+
+    'settingsPage': function (oRequest, oResponse) {
+        oResponse.render('settings');
+    }, //
+
+    'transferPage': function (oRequest, oResponse) {
+        oResponse.render('transfer');
+    }, //
+
     'startPage_off': function (oRequest, oResponse) {
         oResponse.render('index_off');
     }, // function

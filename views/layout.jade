@@ -34,9 +34,7 @@ html(lang="en").no-js
 
                 //.fb-login-button(data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false")
 
-
-
-                form.loginheader(action="/signin",data-abide=true,type="post")
+                form.right.loginheader(action="/signin",data-abide=true,type="post")
                     label Mail
                     input(required=true,type="email")
                     label Password
@@ -75,13 +73,13 @@ html(lang="en").no-js
                                 li
                                     a(href='/likes') Likes
                                 li
-                                    a(href='#') Überweisungen
+                                    a(href='/transfer') Überweisungen
                                 li
-                                    a(href='#') Einstellungen
+                                    a(href='/settings') Einstellungen
                                 li
                                     a(href='#') Kurse
                                 li
-                                    a(href='#') Neuigkeiten
+                                    a(href='/news') Neuigkeiten
 
 
         .row.hide-for-small

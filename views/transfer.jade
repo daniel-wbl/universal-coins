@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .row
+        .medium-12.columns
+            h2.section-head Überweisung tätigen
+
+    .row
+        .medium-6.medium-centered.columns
+
+            form(action="sbumit",data-abide=true,type="post")
+                label Name
+                input(required=true,type="email")
+                label Kontonummer
+                input(required=true,type="password")
+                label Ausführungsdatum
+                input(required=true,type="email")
+                label Verwendungszweck
+                input(required=true,type="email")
+                label Betrag
+                input(required=true,type="email")
+                button.tiny.right Login
